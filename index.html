@@ -1,59 +1,83 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-adsense-account" content="ca-pub-8228479055127150">
 <meta name="description" content="Free Math Tutorials by Wyatt - Learn exponents, scientific notation, algebra, calculus, and more!">
 <meta name="keywords" content="math help, math tutorial, exponents, scientific notation, algebra, calculus, Wyatt's Math">
-<meta name="author" content="Wyatt"><style>
-body {
-    font-family: Arial;
-    background-color: #15b2eb;
-}
+<meta name="author" content="Wyatt">
 
-select {
-    padding: 8px;
-    font-size: 16px;
-    margin-top: 10px;
-}
-.video-container {
-    max-width: 100%;
-    height: auto;
-    display: block; /* optional: removes small gaps below image */
-}
+<title>Wyatt's Math Tutorials</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #15b2eb;
+        margin: 20px;
+        text-align: center;
+        color: #fff;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    select, button {
+        padding: 10px 15px;
+        font-size: 16px;
+        margin: 10px 5px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: #fff;
+        color: #15b2eb;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background-color: #f0f0f0;
+    }
+
+    .video-container {
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: none;
+        border-radius: 10px;
+    }
 </style>
 
 <script>
 function selectFromDropdown() {
-    let selected = document.getElementById("dropdown").value;
+    const selected = document.getElementById("dropdown").value;
+    document.querySelectorAll(".video-container iframe").forEach(v => v.style.display = "none");
 
-    let video1 = document.getElementById("video1");
-    let video2 = document.getElementById("video2");
-
-    // Hide both first
-    video1.style.display = "none";
-    video2.style.display = "none";
-
-    // Show selected video
-    if (selected === "video1") {
-        video1.style.display = "block";
-    } 
-    else if (selected === "video2") {
-        video2.style.display = "block";
+    if (selected) {
+        document.getElementById(selected).style.display = "block";
     }
 }
 
 // Background color buttons
 function blue() {
     document.body.style.backgroundColor = "blue";
+    document.body.style.color = "#fff";
 }
 
 function white() {
     document.body.style.backgroundColor = "white";
+    document.body.style.color = "#000";
 }
 </script>
 
 </head>
-
 <body>
 
 <h2>Select a Math Video</h2>
@@ -61,22 +85,24 @@ function white() {
 <select id="dropdown" onchange="selectFromDropdown()">
     <option value="">-- Choose a video --</option>
     <option value="video1">Exponents</option>
-    <option value="video2">Sci. notation</option>
+    <option value="video2">Scientific Notation</option>
 </select>
-<br><br>
 
+<div>
+    <button onclick="blue()">Blue Background</button>
+    <button onclick="white()">White Background</button>
+</div>
+
+<!-- Google AdSense: untouched -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8228479055127150"
      crossorigin="anonymous"></script>
-<br><br>
+
 <div class="video-container">
-<iframe id="video1" width="500" height="300"
-src="https://www.youtube.com/embed/5dA6MUG6Ef8"
-frameborder="0" allowfullscreen style="display:none;"></iframe>
+    <iframe id="video1" src="https://www.youtube.com/embed/5dA6MUG6Ef8" frameborder="0" allowfullscreen></iframe>
 </div>
 <div class="video-container">
-<iframe id="video2" width="auto" height="auto"
-src="https://www.youtube.com/embed/djIs7onQAvI"
-frameborder="0" allowfullscreen style="display:none;"></iframe>
+    <iframe id="video2" src="https://www.youtube.com/embed/djIs7onQAvI" frameborder="0" allowfullscreen></iframe>
 </div>
+
 </body>
 </html>
