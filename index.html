@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Math Website</title>
+
+<style>
+body {
+    font-family: Arial;
+    background-color: #15b2eb;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+</style>
+
+<script>
+function selectFromDropdown() {
+    let selected = document.getElementById("dropdown").value;
+
+    let video1 = document.getElementById("video1");
+    let video2 = document.getElementById("video2");
+
+    // Hide both first
+    video1.style.display = "none";
+    video2.style.display = "none";
+
+    // Show selected video
+    if (selected === "video1") {
+        video1.style.display = "block";
+    } 
+    else if (selected === "video2") {
+        video2.style.display = "block";
+    }
+}
+
+// Background color buttons
+function blue() {
+    document.body.style.backgroundColor = "blue";
+}
+
+function white() {
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Select a Math Video</h2>
+
+<select id="dropdown" onchange="selectFromDropdown()">
+    <option value="">-- Choose a video --</option>
+    <option value="video1">Exponents</option>
+    <option value="video2">Sci. notation</option>
+</select>
+
+<br><br>
+
+
+<br><br>
+
+<iframe id="video1" width="500" height="315"
+src="https://www.youtube.com/embed/5dA6MUG6Ef8"
+frameborder="0" allowfullscreen style="display:none;"></iframe>
+
+<iframe id="video2" width="500" height="315"
+src="https://www.youtube.com/embed/djIs7onQAvI"
+frameborder="0" allowfullscreen style="display:none;"></iframe>
+
+</body>
+</html>
