@@ -68,13 +68,14 @@ function updateSecondDropdown() {
         second.innerHTML += "<option value=''>-- Choose a lesson --</option>";
         second.innerHTML += "<option value='video1'>Exponents</option>";
         second.innerHTML += "<option value='video3'>Expressions</option>";
-        second.innerHTML += "<option value='video2'>sci. notation</option>";
+        second.innerHTML += "<option value='video2'>Scientific Notation</option>";
     } 
     else if (first === "calculus") {
         second.style.display = "inline";
         second.innerHTML += "<option value=''>-- Choose a lesson --</option>";
-        second.innerHTML += "<option value='derivatives'>Derivatives</option>";
-        ";
+        second.innerHTML += "<option value='video2'>Derivatives</option>";
+        // Add more Calculus videos here if needed
+        // second.innerHTML += "<option value='video4'>Integrals</option>";
     } 
     else {
         second.style.display = "none";
@@ -151,6 +152,12 @@ function white() {
     <iframe id="video3" src="https://www.youtube.com/embed/w4-xolRiHGw" allowfullscreen></iframe>
 </div>
 
+<!-- Optional: add more videos for Calculus like Integrals here -->
+<!--
+<div class="video-container">
+    <iframe id="video4" src="https://www.youtube.com/embed/YOUR_INTEGRALS_VIDEO" allowfullscreen></iframe>
+</div>
+-->
 
 </body>
 </html>
