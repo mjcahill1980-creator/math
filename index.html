@@ -37,7 +37,7 @@
         color: #15b2eb;
         transition: 0.3s;
         border-radius: 100px;
- }
+    }
 
     button:hover {
         background-color: #f0f0f0;
@@ -59,8 +59,13 @@
 <script>
 function selectFromDropdown() {
     const selected = document.getElementById("dropdown").value;
-    document.querySelectorAll(".video-container iframe").forEach(v => v.style.display = "none");
 
+    // Hide all videos
+    document.querySelectorAll(".video-container iframe").forEach(v => {
+        v.style.display = "none";
+    });
+
+    // Show selected video
     if (selected) {
         document.getElementById(selected).style.display = "block";
     }
@@ -70,16 +75,27 @@ function selectFromDropdown() {
 function blue() {
     document.body.style.backgroundColor = "blue";
     document.body.style.color = "#fff";
+
+    const style = document.createElement("style");
+            style.textContent = `
+                .dropdown {
+                    color: black;
+                    background-color: white;
+                }
+            `;
+            document.head.appendChild(style);
+        
 }
 
 function white() {
     document.body.style.backgroundColor = "white";
     document.body.style.color = "#000";
+
     const style = document.createElement("style");
             style.textContent = `
-                .dropdown2 {
-                  background-color : black;
-                  color: white;
+                .dropdown {
+                    color: white;
+                    background-color: black;
                 }
             `;
             document.head.appendChild(style);
@@ -89,10 +105,11 @@ function white() {
 
 </head>
 <body>
+
 <h1>Welcome to Wyatt's Math Website!</h1>
 <h2>Select a Math Video</h2>
 
-<select id="dropdown" class = "dropdown2" onchange="selectFromDropdown()">
+<select id="dropdown" class="dropdown2" onchange="selectFromDropdown()">
     <option value="">-- Choose a video --</option>
     <option value="video1">Exponents</option>
     <option value="video2">Scientific Notation</option>
@@ -104,18 +121,20 @@ function white() {
     <button onclick="white()">White Background</button>
 </div>
 
-<!-- Google AdSense: untouched -->
+<!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8228479055127150"
      crossorigin="anonymous"></script>
 
 <div class="video-container">
-    <iframe id="video1" src="https://www.youtube.com/embed/5dA6MUG6Ef8" frameborder="0" allowfullscreen></iframe>
+    <iframe id="video1" src="https://www.youtube.com/embed/5dA6MUG6Ef8" allowfullscreen></iframe>
 </div>
+
 <div class="video-container">
-    <iframe id="video2" src="https://www.youtube.com/embed/djIs7onQAvI" frameborder="0" allowfullscreen></iframe>
+    <iframe id="video2" src="https://www.youtube.com/embed/djIs7onQAvI" allowfullscreen></iframe>
 </div>
+
 <div class="video-container">
-    <iframe id="video3" src="https://www.youtube.com/embed/w4-xolRiHGw" frameborder="0" allowfullscreen></iframe>
+    <iframe id="video3" src="https://www.youtube.com/embed/w4-xolRiHGw" allowfullscreen></iframe>
 </div>
 
 </body>
