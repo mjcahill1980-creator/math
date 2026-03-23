@@ -13,7 +13,7 @@
 <style>
     body {
         font-family: Arial, sans-serif;
-        background-color: #15b2eb;
+        background-color: blue;
         margin: 20px;
         text-align: center;
         color: #fff;
@@ -29,14 +29,15 @@
         margin: 10px 5px;
         cursor: pointer;
         border: none;
-        border-radius: 5px;
+        border-radius: 10px;
     }
 
     button {
         background-color: #fff;
         color: #15b2eb;
         transition: 0.3s;
-    }
+        border-radius: 100px;
+ }
 
     button:hover {
         background-color: #f0f0f0;
@@ -79,13 +80,14 @@ function white() {
 
 </head>
 <body>
-
+<h1>Welcome to Wyatt's Math Website!</h1>
 <h2>Select a Math Video</h2>
 
 <select id="dropdown" onchange="selectFromDropdown()">
     <option value="">-- Choose a video --</option>
     <option value="video1">Exponents</option>
     <option value="video2">Scientific Notation</option>
+    <option value="video3">Expressions</option>
 </select>
 
 <div>
@@ -102,6 +104,9 @@ function white() {
 </div>
 <div class="video-container">
     <iframe id="video2" src="https://www.youtube.com/embed/djIs7onQAvI" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+    <iframe id="video3" src="https://www.youtube.com/embed/w4-xolRiHGw" frameborder="0" allowfullscreen></iframe>
 </div>
 
 </body>
