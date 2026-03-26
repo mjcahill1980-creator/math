@@ -51,18 +51,8 @@
     .video-container iframe {
         width: 100%;
         aspect-ratio: 16/9;
-        display: none;
+        display: none; /* hide all by default */
         border-radius: 10px;
-    }
-    .show {
-     max-width: 800px;
-      margin: 20px auto;
-    }
-    .show iframe {
-     width: 100%;
-     aspect-ratio: 16/9;
-     border-radius: 10px;
-
     }
 </style>
 
@@ -71,7 +61,7 @@ function updateSecondDropdown() {
     const first = document.getElementById("firstDropdown").value;
     const second = document.getElementById("secondDropdown");
 
-    second.innerHTML = ""; // clear old options
+    second.innerHTML = "";
 
     if (first === "algebra") {
         second.style.display = "inline";
@@ -83,29 +73,28 @@ function updateSecondDropdown() {
     else if (first === "calculus") {
         second.style.display = "inline";
         second.innerHTML += "<option value=''>-- Choose a lesson --</option>";
-        second.innerHTML += "<option>No content yet</option>";
-        // Add more Calculus videos here if needed
-        // second.innerHTML += "<option value='video3'>Integrals</option>";
+        second.innerHTML += "<option value=''>No content yet</option>";
     } 
     else {
         second.style.display = "none";
     }
 
-    // Hide all videos when changing topic
+    second.selectedIndex = 0;
+
+    // hide all videos
     document.querySelectorAll(".video-container iframe").forEach(v => v.style.display = "none");
 }
 
 function selectFromDropdown() {
     const selected = document.getElementById("secondDropdown").value;
+
     document.querySelectorAll(".video-container iframe").forEach(v => v.style.display = "none");
 
     if (selected) {
         document.getElementById(selected).style.display = "block";
-        document.getElementById(video1).style.display = "none";
     }
 }
 
-// Original button logic
 function blue() {
     document.body.style.backgroundColor = "blue";
     document.body.style.color = "#fff";
@@ -131,14 +120,12 @@ function white() {
 <h1>Welcome to Wyatt's Math Website!</h1>
 <h2>Select a Math Video</h2>
 
-<!-- FIRST DROPDOWN -->
 <select id="firstDropdown" onchange="updateSecondDropdown()">
     <option value="">-- Choose a topic --</option>
     <option value="algebra">Algebra</option>
     <option value="calculus">Calculus</option>
 </select>
 
-<!-- SECOND DROPDOWN -->
 <select id="secondDropdown" class="dropdown2" onchange="selectFromDropdown()" style="display:none;"></select>
 
 <div>
@@ -146,12 +133,12 @@ function white() {
     <button onclick="white()">White Background</button>
 </div>
 
-<!-- Google AdSense -->
+<!-- Google AdSense (UNCHANGED) -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8228479055127150"
      crossorigin="anonymous"></script>
 
-<!-- Video containers -->
-<div class="show">
+<!-- Videos -->
+<div class="video-container">
     <iframe id="video1" src="https://www.youtube.com/embed/5dA6MUG6Ef8" allowfullscreen></iframe>
 </div>
 
@@ -162,13 +149,6 @@ function white() {
 <div class="video-container">
     <iframe id="video3" src="https://www.youtube.com/embed/w4-xolRiHGw" allowfullscreen></iframe>
 </div>
-
-<!-- Optional: add more videos for Calculus like Integrals here -->
-<!--
-<div class="video-container">
-    <iframe id="video4" src="https://www.youtube.com/embed/YOUR_INTEGRALS_VIDEO" allowfullscreen></iframe>
-</div>
--->
 
 </body>
 </html>
