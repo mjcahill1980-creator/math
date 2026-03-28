@@ -1,45 +1,50 @@
+/* Reset */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   text-align: center;
 }
 
-/* Navbar */
+/* NAVBAR */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #333;
+  display: flex;              /* 🔥 KEY CHANGE */
+  align-items: center;
 }
 
+/* Navbar items */
 ul li {
-  float: left;
+  list-style: none;
 }
 
+/* Links */
 ul li a {
   display: block;
   color: white;
-  padding: 14px 16px;
+  padding: 14px 20px;
   text-decoration: none;
 }
 
+/* Hover */
 ul li a:hover {
-  background-color: #111;
+  background-color: #555;
 }
 
-/* Dropdown */
+/* Dropdown styling */
 ul li select {
-  display: block;
-  padding: 14px 16px;
+  padding: 14px 20px;
   border: none;
   background-color: #333;
   color: white;
   font-size: 16px;
 }
 
+/* Hover effect */
 ul li select:hover {
-  background-color: #111;
+  background-color: #555;
   cursor: pointer;
 }
 
@@ -47,20 +52,31 @@ ul li select:focus {
   outline: none;
 }
 
-/* Video */
+/* LOGO */
+img {
+  margin-top: 30px;
+}
+
+/* HEADINGS */
+h1 {
+  margin-top: 20px;
+}
+
+/* VIDEO */
 .video-container {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 .video-container iframe {
   width: 100%;
   aspect-ratio: 16/9;
+  border-radius: 10px;
 }
 
-/* Links */
+/* BACK LINK */
 a {
   display: inline-block;
   margin-top: 20px;
-  color: blue;
+  font-size: 18px;
 }
