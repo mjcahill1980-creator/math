@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset + base */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -11,8 +11,8 @@ ul {
   margin: 0;
   padding: 0;
   background-color: #333;
-  display: flex;              /* 🔥 KEY CHANGE */
-  align-items: center;
+  display: flex;
+  align-items: center; /* ✅ vertical alignment fix */
 }
 
 /* Navbar items */
@@ -22,24 +22,33 @@ ul li {
 
 /* Links */
 ul li a {
-  display: block;
+  display: flex;
+  align-items: center;       /* ✅ centers text vertically */
+  height: 48px;              /* ✅ consistent height */
+  padding: 0 20px;
   color: white;
-  padding: 14px 20px;
   text-decoration: none;
 }
 
-/* Hover */
+/* Hover effect */
 ul li a:hover {
   background-color: #555;
 }
 
-/* Dropdown styling */
+/* DROPDOWN (select) */
 ul li select {
-  padding: 14px 20px;
+  height: 48px;              /* ✅ matches links */
+  padding: 0 20px;
   border: none;
   background-color: #333;
   color: white;
   font-size: 16px;
+  display: block;
+}
+
+/* Remove default outline */
+ul li select:focus {
+  outline: none;
 }
 
 /* Hover effect */
@@ -48,8 +57,10 @@ ul li select:hover {
   cursor: pointer;
 }
 
-ul li select:focus {
-  outline: none;
+/* Optional tiny adjustment (if needed) */
+ul li select {
+  position: relative;
+  top: 1px; /* tweak if slightly off */
 }
 
 /* LOGO */
@@ -79,4 +90,5 @@ a {
   display: inline-block;
   margin-top: 20px;
   font-size: 18px;
+  color: blue;
 }
