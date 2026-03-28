@@ -3,30 +3,34 @@
 <head>
 <title>Exponents</title>
 <link rel="stylesheet" href="styles.css">
-<link rel="icon" href="logo.png" type="image/png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="script.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="logo.png">
 </head>
-<li>
-    <select id="firstDropdown">
+
+<body>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="bio.html">About</a></li>
+
+  <li>
+    <select id="firstDropdown" onchange="updateSecondDropdown()">
       <option value="">Topics</option>
       <option value="algebra">Algebra</option>
       <option value="calculus">Calculus</option>
     </select>
   </li>
 
-<!-- SECOND DROPDOWN -->
-<li>
-<select id="secondDropdown" onchange="location = this.value;" style="display:none;"></select>
-</li>
+  <li>
+    <select id="secondDropdown" onchange="location = this.value;" style="display:none;"></select>
+  </li>
 </ul>
-
-<body>
 
 <h1>Exponents</h1>
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/5dA6MUG6Ef8" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/5dA6MUG6Ef8" allowfullscreen></iframe>
 </div>
 
 <a href="index.html">⬅ Back to Home</a>
