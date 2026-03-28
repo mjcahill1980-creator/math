@@ -1,0 +1,47 @@
+body {
+        font-family: Arial, sans-serif;
+        background-color: White;
+        margin: 20px;
+        text-align: center;
+        color: #fff;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+        color: black;
+    }
+
+    select, button {
+        padding: 10px 15px;
+        font-size: 16px;
+        margin: 10px 5px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        background-color: black;
+        color: White;
+
+     }
+
+    button {
+        background-color: #fff;
+        color: #15b2eb;
+        transition: 0.3s;
+        border-radius: 100px;
+    }
+
+    button:hover {
+        background-color: #f0f0f0;
+    }
+
+    .video-container {
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: none; /* hide all by default */
+        border-radius: 10px;
+    }
