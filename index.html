@@ -3,44 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta name="google-adsense-account" content="ca-pub-8228479055127150">
 <meta name="description" content="Free Math Tutorials by Wyatt - Learn exponents, scientific notation, algebra, calculus, and more!">
 <meta name="keywords" content="math help, math tutorial, exponents, scientific notation, algebra, calculus, Wyatt's Math">
 <meta name="author" content="Wyatt">
+
+<title>Math Tutorial Videos with Wyatt - Algebra, Geometry, Calculus, Addition, Subtraction, Multiplication, Division, and much more!</title>
+
 <link rel="stylesheet" href="styles.css">
-<script src="script.js"></script>
-<title>Math Tutorial Videos with Wyatt - Algebra, Geometry, Calculus, Addition, Subtraction, Multiplication, Division, and much more! </title>
-
+<script src="script.js" defer></script>
 </head>
+
 <body>
-<img src="logo.png" width="200px" align="center" alt="Learn math with Wyatt through video tutorials." />
 
-<h2>Select a Math Video</h2>
+<img src="logo.png" width="200" alt="Learn math with Wyatt through video tutorials.">
 
+<h2>Select a Math Lesson</h2>
+
+<!-- FIRST DROPDOWN -->
 <select id="firstDropdown" onchange="updateSecondDropdown()">
     <option value="">-- Choose a topic --</option>
     <option value="algebra">Algebra</option>
     <option value="calculus">Calculus</option>
 </select>
 
+<!-- SECOND DROPDOWN -->
 <select id="secondDropdown" class="dropdown2" onchange="selectFromDropdown()" style="display:none;"></select>
 
-<!-- Google AdSense (UNCHANGED) -->
+<!-- Google AdSense (KEPT) -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8228479055127150"
      crossorigin="anonymous"></script>
-
-<!-- Videos -->
-<div class="video-container">
-    <iframe id="video1" src="https://www.youtube.com/embed/5dA6MUG6Ef8" allowfullscreen></iframe>
-</div>
-
-<div class="video-container">
-    <iframe id="video2" src="https://www.youtube.com/embed/djIs7onQAvI" allowfullscreen></iframe>
-</div>
-
-<div class="video-container">
-    <iframe id="video3" src="https://www.youtube.com/embed/w4-xolRiHGw" allowfullscreen></iframe>
-</div>
 
 </body>
 </html>

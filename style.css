@@ -1,47 +1,45 @@
 body {
-        font-family: Arial, sans-serif;
-        background-color: White;
-        margin: 20px;
-        text-align: center;
-        color: #fff;
-    }
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+    margin: 20px;
+}
 
-    h2 {
-        margin-bottom: 15px;
-        color: black;
-    }
+h1, h2 {
+    color: black;
+}
 
-    select, button {
-        padding: 10px 15px;
-        font-size: 16px;
-        margin: 10px 5px;
-        cursor: pointer;
-        border: none;
-        border-radius: 10px;
-        background-color: black;
-        color: White;
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
 
-     }
+/* Video styling */
+.video-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
 
-    button {
-        background-color: #fff;
-        color: #15b2eb;
-        transition: 0.3s;
-        border-radius: 100px;
-    }
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+}
 
-    button:hover {
-        background-color: #f0f0f0;
-    }
+/* Back link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: blue;
+}
 
-    .video-container {
-        max-width: 800px;
-        margin: 20px auto;
-    }
-
-    .video-container iframe {
-        width: 100%;
-        aspect-ratio: 16/9;
-        display: none; /* hide all by default */
-        border-radius: 10px;
-    }
+a:hover {
+    text-decoration: underline;
+}
