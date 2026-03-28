@@ -19,18 +19,27 @@
 
 <img src="logo.png" width="200" alt="Learn math with Wyatt through video tutorials.">
 
-<h2>Select a Math Lesson</h2>
+<h1>Welcome to Wyatt's Math Website!</h1>
 
-<!-- FIRST DROPDOWN -->
-<select id="firstDropdown" onchange="updateSecondDropdown()">
-    <option value="">-- Choose a topic --</option>
-    <option value="algebra">Algebra</option>
-    <option value="calculus">Calculus</option>
-</select>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="bio.html">About</a></li>
+  
+
+
+  <li>
+    <select id="firstDropdown">
+      <option value="">Topics</option>
+      <option value="algebra">Algebra</option>
+      <option value="calculus">Calculus</option>
+    </select>
+  </li>
 
 <!-- SECOND DROPDOWN -->
+<li>
 <select id="secondDropdown" onchange="location = this.value;" style="display:none;"></select>
-
+</li>
+</ul>
 <!-- Google AdSense (KEPT) -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8228479055127150"
      crossorigin="anonymous"></script>
