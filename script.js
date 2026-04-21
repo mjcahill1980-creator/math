@@ -11,6 +11,7 @@ function updateSecondDropdown() {
         second.innerHTML += "<option value='Exponents.html'>Exponents</option>";
         second.innerHTML += "<option value='Expressions.html'>Expressions</option>";
         second.innerHTML += "<option value='Sci_notation.html'>Scientific Notation</option>";
+        second.innerHTML += "<option value='Evaluating_Expressions.html'>Evaluating Expressions</option>";
     } else {
         second.style.display = "none";
     }
