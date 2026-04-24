@@ -91,3 +91,18 @@ a {
   font-size: 18px;
   color: blue;
 }
+main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.white {
+color : white;
+}

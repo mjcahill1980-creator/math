@@ -21,14 +21,42 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8228479055127150"
      crossorigin="anonymous"></script>
 
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("logo.png");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+a {
+color: white;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="bio.html">About</a></li>
-  
+<ul>  
   <li>
     <select id="pageSelect" onchange="location = this.value;">
       <option value="">Quizzes</option>
@@ -51,17 +79,19 @@
     <select id="secondDropdown" onchange="location = this.value;" style="display:none;"></select>
   </li>
 </ul>
-<img src="logo.png" width="200" alt="Learn math with Wyatt through videos.">
 
-<script>
-    function goToPage(select) {
-      const url = select.value;
-      if (url) {
-        window.location.href = url;
-      }
-    }
-</script>
-<h1>Welcome to Wyatt's Math Website!</h1>
+<main>
+  
+ 
+</main>
+
+<footer>
+<div class = "white">
+<a href="index.html">Home</a> 
+<a href="bio.html">About</a> 
+</div>
+<p>© 2026 wyattsmath.com</p>
+</footer>
 
 </body>
 </html>
