@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Expressions</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js?v=2" defer></script>
+<script src="Expressions_quiz.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="logo.png">
+</head>
+
+<body>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="bio.html">About</a></li>
+  
+  <li>
+    <select id="pageSelect" onchange="location = this.value;">
+      <option value="">Quizzes</option>
+      <option value="Exponents_Quiz.html">Exponents Quiz</option>
+      <option value="Expressions_Quiz.html">Expressions Quiz</option>
+      <option value="Sci_notation_quiz.html">Scientific Notation Quiz</option>
+      <option value="Evaluating_quiz.html">Evaluating Expressions Quiz</option>
+    </select>
+  </li>
+
+  <li>
+    <select id="firstDropdown" onchange="updateSecondDropdown()">
+      <option value="">Topics</option>
+      <option value="algebra">Algebra</option>
+      <option value="calculus">Calculus</option>
+    </select>
+  </li>
+
+  <li>
+    <select id="secondDropdown" onchange="location = this.value;" style="display:none;"></select>
+  </li>
+</ul>
+
+
+<h1>Expressions Quiz</h1>
+<form id="ExpressionsForm">
+<p>1) What type of expression is 2x+1?</p>
+<label><input type="radio" name="q1" value="Monomial">Monomial</label>
+<label><input type="radio" name="q1" value="Binomial">Binomial</label>
+<label><input type="radio" name="q1" value="Triomial">Triomial</label>
+
+<br><br>
+
+<p>2) What is the expression 2x^2+x+y^3 in standard form?</p>
+<label><input type="radio" name="q2" value="2x^2+y^3+x">2x^2+y+y^3+x</label>
+<label><input type="radio" name="q2" value="y^3+2x^2+x">y^3+2x^2+x</label>
+<label><input type="radio" name="q2" value="x+y^3+2x^2">x+y^3+2x^2</label>
+
+<br><br>
+
+<p>3) What type of expression is 3/5+4x+y</p>
+<label><input type="radio" name="q3" value="Monomial">Monomial</label>
+<label><input type="radio" name="q3" value="Binomial">Binomial</label>
+<label><input type="radio" name="q3" value="Triomial">Triomial</label>
+
+<br><br>
+
+<p>4) How many terms are in a triomial?</p>
+<label><input type="radio" name="q4" value="1">1</label>
+<label><input type="radio" name="q4" value="2">2</label>
+<label><input type="radio" name="q4" value="3">3</label>
+
+<br><br>
+
+<p>5) How many terms are in a binomial?</p>
+<label><input type="radio" name="q5" value="1">1</label>
+<label><input type="radio" name="q5" value="2">2</label>
+<label><input type="radio" name="q5" value="3">3</label>
+
+<br><br>
+
+<input type="submit">
+</form>
+
+<a href="index.html">⬅ Back to Home</a>
+</body>
+</html>
+

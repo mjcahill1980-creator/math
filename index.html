@@ -29,7 +29,16 @@
   <li><a href="index.html">Home</a></li>
   <li><a href="bio.html">About</a></li>
   
- 
+  <li>
+    <select id="pageSelect" onchange="location = this.value;">
+      <option value="">Quizzes</option>
+      <option value="Exponents_Quiz.html">Exponents Quiz</option>
+      <option value="Expressions_Quiz.html">Expressions Quiz</option>
+      <option value="Sci_notation_quiz.html">Scientific Notation Quiz</option>
+      <option value="Evaluating_quiz.html">Evaluating Expressions Quiz</option>
+    </select>
+  </li>
+
   <li>
     <select id="firstDropdown" onchange="updateSecondDropdown()">
       <option value="">Topics</option>
@@ -42,9 +51,16 @@
     <select id="secondDropdown" onchange="location = this.value;" style="display:none;"></select>
   </li>
 </ul>
-
 <img src="logo.png" width="200" alt="Learn math with Wyatt through videos.">
 
+<script>
+    function goToPage(select) {
+      const url = select.value;
+      if (url) {
+        window.location.href = url;
+      }
+    }
+</script>
 <h1>Welcome to Wyatt's Math Website!</h1>
 
 </body>

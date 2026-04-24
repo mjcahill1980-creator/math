@@ -13,7 +13,16 @@
 <ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="bio.html">About</a></li>
- 
+  
+  <li>
+    <select id="pageSelect" onchange="location = this.value;">
+      <option value="">Quizzes</option>
+      <option value="Exponents_Quiz.html">Exponents Quiz</option>
+      <option value="Expressions_Quiz.html">Expressions Quiz</option>
+      <option value="Sci_notation_quiz.html">Scientific Notation Quiz</option>
+      <option value="Evaluating_quiz.html">Evaluating Expressions Quiz</option>
+    </select>
+  </li>
 
   <li>
     <select id="firstDropdown" onchange="updateSecondDropdown()">
@@ -26,9 +35,7 @@
   <li>
     <select id="secondDropdown" onchange="location = this.value;" style="display:none;"></select>
   </li>
-</ul>
-
-<h1>About the Author</h1>
+</ul><h1>About the Author</h1>
 <br>
 <div class = "center2">
 <p>My name is Wyatt and I like math. I am almost ten and I'm learning advanced Calculus 3. I'm also learning how to program websites. The reason why I created this website is so everyone in the world can see how to do math. I hope you like my site!</p>
