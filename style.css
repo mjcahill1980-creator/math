@@ -3,6 +3,11 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   text-align: center;
+  display: -webkit-flex;  /* Safari */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+   min-height: 100vh;
+  margin: 0;
 }
 
 /* NAVBAR */
@@ -95,6 +100,7 @@ main {
   flex: 1;
   padding: 20px;
   text-align: center;
+  -webkit-flex: 1;
 }
 
 footer {
