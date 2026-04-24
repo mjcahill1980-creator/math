@@ -91,9 +91,10 @@ a {
   font-size: 18px;
   color: blue;
 }
-p {
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 200px;
+ 
 }
