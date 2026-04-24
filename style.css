@@ -91,11 +91,3 @@ a {
   font-size: 18px;
   color: blue;
 }
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  text-align: center;
- 
-}
