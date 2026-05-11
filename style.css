@@ -112,3 +112,6 @@ footer {
 .white {
 color : white;
 }
+p {
+text-align: center;
+}
