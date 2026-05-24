@@ -30,4 +30,6 @@ function updateQuizDropdown() {
     second_Quiz.innerHTML += "<option value='Sci_notation_quiz.html'>Scientific notation Quiz</option>";
     second_Quiz.innerHTML += "<option value='Evaluating_quiz.html'>Evaluating Expressions Quiz</option>";
    }
+   else {
+   second_Quiz.style.display= "none";
 }
