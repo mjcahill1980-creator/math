@@ -14,22 +14,25 @@ function updateSecondDropdown() {
         second.innerHTML += "<option value='Evaluating_Expressions.html'>Evaluating Expressions</option>";
     } else {
         second.style.display = "none";
-    } 
+    }
+} // <- missing brace added here
+
+
 function updateQuizDropdown() {
     const Quiz_first = document.getElementById("pageSelect").value;
     const second_Quiz = document.getElementById("secondQuizDropdown");
-    
+
     second_Quiz.innerHTML = "";
 
     if (Quiz_first === "Algebra") {
-    second_Quiz.style.display = "inline";
+        second_Quiz.style.display = "inline";
 
-    second_Quiz.innerHtML += "<option value=''>-- Choose a Quiz --</option>";
-    second_Quiz.innerHTML += "<option value='Exponents_Quiz.html'>Exponents Quiz</option>";
-    second_Quiz.innerHTML += "<option value='Expressions_Quiz.html'>Expressions Quiz</option>";
-    second_Quiz.innerHTML += "<option value='Sci_notation_quiz.html'>Scientific notation Quiz</option>";
-    second_Quiz.innerHTML += "<option value='Evaluating_quiz.html'>Evaluating Expressions Quiz</option>";
-   }
-   else {
-   second_Quiz.style.display= "none";
+        second_Quiz.innerHTML += "<option value=''>-- Choose a Quiz --</option>";
+        second_Quiz.innerHTML += "<option value='Exponents_Quiz.html'>Exponents Quiz</option>";
+        second_Quiz.innerHTML += "<option value='Expressions_Quiz.html'>Expressions Quiz</option>";
+        second_Quiz.innerHTML += "<option value='Sci_notation_quiz.html'>Scientific notation Quiz</option>";
+        second_Quiz.innerHTML += "<option value='Evaluating_quiz.html'>Evaluating Expressions Quiz</option>";
+    } else {
+        second_Quiz.style.display = "none";
+    }
 }
