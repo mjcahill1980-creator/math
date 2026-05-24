@@ -6,7 +6,7 @@
 
 <link rel="icon" href="logo.png" type="image/png">
 
-<!-- ✅ META TAGS (KEPT) -->
+
 <meta name="google-adsense-account" content="ca-pub-8228479055127150">
 <meta name="description" content="Free Math Tutorials by Wyatt - Learn exponents, scientific notation, algebra, calculus, and more!">
 <meta name="keywords" content="math help, math tutorial, exponents, scientific notation, algebra, calculus, Wyatt's Math">
@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="style.css">
 <script src="script.js?v=2" defer></script>
 
-<!-- ✅ GOOGLE ADSENSE -->
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8228479055127150"
      crossorigin="anonymous"></script>
 
@@ -59,12 +59,9 @@ color: white;
 
 <ul>  
   <li>
-    <select id="pageSelect" onchange="location = this.value;">
+    <select id="pageSelect" onchange="updateQuizDropdown()">
       <option value="">Quizzes</option>
-      <option value="Exponents_Quiz.html">Exponents Quiz</option>
-      <option value="Expressions_Quiz.html">Expressions Quiz</option>
-      <option value="Sci_notation_quiz.html">Scientific Notation Quiz</option>
-      <option value="Evaluating_quiz.html">Evaluating Expressions Quiz</option>
+      <option value="Algebra">Algebra</option>
     </select>
   </li>
 
@@ -78,6 +75,7 @@ color: white;
 
   <li>
     <select id="secondDropdown" onchange="location = this.value;" style="display:none;"></select>
+    <select id="secondQuizDropdown" onchange="location = this.value;" style="display:none;"></select>
   </li>
 </ul>
 
