@@ -34,21 +34,29 @@
 </ul><h1>About the Author</h1>
 <br>
 
-<img class = "left" src="Wyatt_photo.jpg" alt="Picture of Wyatt">
+<div class="about-container">
+    <img src="Wyatt_photo.jpg" alt="Picture of Wyatt">
 
-<div class = "right">
-<p>My name is Wyatt and I like math. I am almost ten and I'm learning advanced Calculus 3. 
-I'm also learning how to program websites. The reason why I created this website is so everyone 
-in the world can see how to do math. I hope you like my site!</p>
+    <div>
+        <p>
+            My name is Wyatt and I like math. I am almost ten and I'm learning
+            advanced Calculus 3. I'm also learning how to program websites.
+            The reason why I created this website is so everyone in the world
+            can see how to do math. I hope you like my site!
+        </p>
+    </div>
 </div>
 <style>
 .left {
-float: left;
-margin-right: 20px;
-width: 250px;
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
-.right {
-text-align: right;
+
+.about-container img {
+    width: 250px;
+    height: auto;
 }
 a {
 color: white;
