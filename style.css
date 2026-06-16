@@ -94,7 +94,7 @@ a {
   display: inline-block;
   margin-top: 20px;
   font-size: 18px;
-  color: blue;
+  color: white;
 }
 main {
   flex: 1;
@@ -109,8 +109,15 @@ footer {
   text-align: center;
   padding: 1rem;
 }
-.white {
-color : white;
+.black {
+display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+	
+}
+.normal {
+color: black;
 }
 p {
 text-align: center;
