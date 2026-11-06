@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Combining Like Terms Quiz</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js?v=2" defer></script>
+<script src="combining_quiz.js" defer></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8228479055127150"
+crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-8228479055127150">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="logo.png">
+</head>
+
+<body>
+
+<ul>  
+  <li>
+    <select id="pageSelect" onchange="updateQuizDropdown()">
+      <option value="">Quizzes</option>
+      <option value="Algebra">Algebra</option>
+    </select>
+  </li>
+
+  <li>
+    <select id="firstDropdown" onchange="updateSecondDropdown()">
+      <option value="">Topics</option>
+      <option value="algebra">Algebra</option>
+    </select>
+  </li>
+
+  <li>
+    <select id="secondDropdown" onchange="location = this.value;" style="display:none;"></select>
+    <select id="secondQuizDropdown" onchange="location = this.value;" style="display:none;"></select>
+  </li>
+</ul>
+<style>
+a {
+color: white;
+}
+
+</style>
+<h1>Combining Like Terms Quiz</h1>
+
+<form id="Combining_Form">
+
+<p>1) What is the combined term of 2x + 3x + 60?</p>
+<label><input type="radio" name="q1" value="5x+60">5x+60</label>
+<label><input type="radio" name="q1" value="2x+3x+60">2x+3x+60</label>
+<label><input type="radio" name="q1" value="65x">65x</label>
+
+<br><br>
+
+<p>2) What is the combined term of sqrt(x) + 2x + 4x?</p>
+<label><input type="radio" name="q2" value="sqrt(6x)">sqrt(6x)</label>
+<label><input type="radio" name="q2" value="sqrt(7x)">sqrt(7x)</label>
+<label><input type="radio" name="q2" value="sqrt(x) + 6x">sqrt(x) + 6x</label>
+
+<br><br>
+
+<p>3) What is the combined term of 2/3x + 4/6x?</p>
+<label><input type="radio" name="q3" value="4/3x">4/3x</label>
+<label><input type="radio" name="q3" value="4/6x">4/6x</label>
+<label><input type="radio" name="q3" value="2/3x">2/3x</label>
+
+<br><br>
+
+<p>4) What is the combined term of x^0 + 3x + 15?</p>
+<label><input type="radio" name="q4" value="4x+15">4x+15</label>
+<label><input type="radio" name="q4" value="3x+15">3x+15</label>
+<label><input type="radio" name="q4" value="3x+16">3x+16</label>
+
+<br><br>
+
+<p>5) Using your knolege of combining like terms what is the value of x in the equation x^0 +3x^2 + 17 = 65?</p>
+<label><input type="radio" name="q5" value="5">5</label>
+<label><input type="radio" name="q5" value="4">4</label>
+<label><input type="radio" name="q5" value="6">6</label>
+
+<br><br>
+
+<input type="submit">
+</form>
+
+<footer>
+<div class = "white">
+<a href="index.html">Home</a> 
+<a href="bio.html">About</a> 
+<a href="Algebra_Lessons.html">Algebra Lessons</a>
+</div>
+<p>© 2026 wyattsmath.com</p>
+</footer>
+
+</body>
+</html>

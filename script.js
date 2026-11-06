@@ -12,7 +12,8 @@ function updateSecondDropdown() {
         second.innerHTML += "<option value='Expressions.html'>Expressions</option>";
         second.innerHTML += "<option value='Sci_notation.html'>Scientific Notation</option>";
         second.innerHTML += "<option value='Evaluating_Expressions.html'>Evaluating Expressions</option>";
-    } else {
+        second.innerHTML += "<option value='Combining_Like_Terms.html'>Combining Like Terms</option>";
+} else {
         second.style.display = "none";
     }
 } // <- missing brace added here
@@ -32,6 +33,7 @@ function updateQuizDropdown() {
         second_Quiz.innerHTML += "<option value='Expressions_Quiz.html'>Expressions Quiz</option>";
         second_Quiz.innerHTML += "<option value='Sci_notation_quiz.html'>Scientific notation Quiz</option>";
         second_Quiz.innerHTML += "<option value='Evaluating_quiz.html'>Evaluating Expressions Quiz</option>";
+        second_Quiz.innerHTML += "<option value='Combining_Like_Terms_Quiz.html'>Combining Like Terms Quiz</option>";
     } else {
         second_Quiz.style.display = "none";
     }
